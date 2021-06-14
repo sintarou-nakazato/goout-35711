@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class GooutControllerTest < ActionDispatch::IntegrationTest
+class GooutsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get goout_index_url
+    get goouts_index_url
     assert_response :success
   end
 

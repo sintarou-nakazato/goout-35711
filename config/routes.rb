@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'goout/index'
-  root to: "goout#index"
+  get 'goouts/index'
+  root to: "goouts#index"
   devise_for :users
 end
