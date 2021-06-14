@@ -1,3 +1,24 @@
-// Place all the styles related to the goouts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+header{
+  height:100px;
+  width: 100%;
+  background-color: lightgrey;
+ }
+.service-title{
+  height:60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight:800;
+  font-size: 40px;
+}
+.main{
+  height: 500px;
+  width: 100%;
+  background-color: white;
+ }
+ .title-contents{
+  height: 500px;
+  width: 100%;
+  background-color: white;
+ }

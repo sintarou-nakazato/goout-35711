@@ -1,0 +1,32 @@
+<header>
+    <h2 class='service-title'>
+      点呼一覧
+    </h2>
+</header>
+
+<div class='main'>
+  <%= form_with model: prototype,  local: true do |f|%>
+  <div class="field">
+    <%= f.label :get_out, "プロトタイプの名称" %><br />
+    <%= f.text_field :get_out, id:"prototype_title" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :go_home, "キャッチコピー" %><br />
+    <%= f.text_area :go_home, class: :form__text, id:"prototype_catch_copy" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :receipt_id, "コンセプト" %><br />
+    <%= f.text_area :receipt_id, class: :form__text, id:"prototype_concept" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :return_id, "プロトタイプの画像" %><br />
+    <%= f.file_field :return_id, id:"prototype_image" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>
